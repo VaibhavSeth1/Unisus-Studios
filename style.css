@@ -1,4 +1,6 @@
+/* ==================== */
 /* Universal Reset */
+/* ==================== */
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +9,9 @@
                "Lucida Sans", Arial, sans-serif;
 }
 
-/* Body Styling */
+/* ==================== */
+/* Body & Background Animation */
+/* ==================== */
 body {
   height: 100vh;
   width: 100%;
@@ -17,28 +21,23 @@ body {
   animation: change 20s infinite ease-in-out;
 }
 
-/* Background Animation */
 @keyframes change {
-  0%, 100% {
-    background-image: url(images/Picsart_25-01-27_19-01-29-110.jpg);
-  }
-  25% {
-    background-image: url(images/Picsart_25-01-27_19-01-45-302.jpg);
-  }
-  50% {
-    background-image: url(images/Picsart_25-01-27_19-02-23-571.jpg);
-  }
-  75% {
-    background-image: url(images/Picsart_25-01-27_18-53-49-757.jpg);
-  }
+  0%, 100% { background-image: url(images/Picsart_25-01-27_19-01-29-110.jpg); }
+  25%      { background-image: url(images/Picsart_25-01-27_19-01-45-302.jpg); }
+  50%      { background-image: url(images/Picsart_25-01-27_19-02-23-571.jpg); }
+  75%      { background-image: url(images/Picsart_25-01-27_18-53-49-757.jpg); }
 }
 
+/* ==================== */
 /* Image Styling */
+/* ==================== */
 img {
   height: 100%;
 }
 
+/* ==================== */
 /* Navbar Styling */
+/* ==================== */
 .navbar {
   margin: 20px;
   height: 60px;
@@ -74,7 +73,9 @@ img {
   box-shadow: 0 0 5px white;
 }
 
+/* ==================== */
 /* Button Styling */
+/* ==================== */
 button {
   border: none;
   font-size: large;
@@ -114,7 +115,9 @@ button {
   right: 0;
 }
 
+/* ==================== */
 /* Content Styling */
+/* ==================== */
 .content {
   height: 100vh;
   width: 100%;
@@ -149,4 +152,73 @@ p {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", 
                "Lucida Sans", Arial, sans-serif;
+}
+
+/* ==================== */
+/* Footer Styling */
+/* ==================== */
+.footer {
+  background: black;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #1e90ff;
+}
+
+.footer-socials {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #1e90ff;
+}
+
+.footer-copy {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #aaa;
 }
