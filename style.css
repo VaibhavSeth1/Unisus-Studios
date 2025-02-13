@@ -185,7 +185,6 @@ p {
   filter: brightness(80%);
 }
 
-/* Overlay Text */
 .overlay {
   position: absolute;
   bottom: 0;
